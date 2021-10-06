@@ -78,6 +78,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io -y
 sudo docker run hello-world
 
 #fix docker deamon
+#you can skip this installation, it is to use the deamon of docker without sudo
 echo "        ####################################################### "
 echo "        #                   FIXING DOCKER                  # "
 echo "        ####################################################### "
