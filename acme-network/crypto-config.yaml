@@ -1,3 +1,6 @@
+#
+####     here we declare the basic idea of our network needs    ####
+#
 OrdererOrgs:
     - Name: Orderer
       Domain: acme.com
@@ -11,11 +14,11 @@ PeerOrgs:
       Domain: org1.acme.com
       EnableNodeOUs: true
       Template:
-        Count: 1
+        Count: 1 #define how many peer have this organization
         SANS:
           - localhost
-      Users:
-        Count: 1
+      Users:     #by default is created an admin user and a simple user
+        Count: 1 #define how many users
     - Name: Org2
       Domain: org2.acme.com
       EnableNodeOUs: true
